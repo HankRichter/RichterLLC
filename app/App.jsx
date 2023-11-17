@@ -1,14 +1,14 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import useCarousel from "./components/Carousel";
+import Carousel from "./components/Carousel";
 
 const App = () => {
-  return(
+  return (
     <>
-    <Navbar />
-    <useCarousel />
+      <Navbar />
+      <Carousel />
     </>
-  )
+  );
 };
 
 export default App;
