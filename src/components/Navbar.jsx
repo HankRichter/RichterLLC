@@ -1,28 +1,27 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="bg-gray-800 text-white">
-      <h1 className="text-2xl font-bold p-4">Richter LLC</h1>
-      <ul className="flex justify-end p-4">
-        <li className="mr-4">
-          <a
-            href="tel:9894137843"
-            className="text-blue-300 hover:text-blue-500"
-          >
-            989-413-7843
-          </a>
-        </li>
-        <li>
-          <a
-            href="mailto:hankricter97@gmail.com"
-            className="text-blue-300 hover:text-blue-500"
-          >
-            hankrichter97@gmail.com
-          </a>
-        </li>
-      </ul>
-    </div>
+    <header className="bg-white shadow sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div className="flex items-center space-x-3">
+          {/* <img src="/logo.png" alt="Logo" className="h-10 w-10 rounded-full" /> */}
+          <span className="text-xl font-bold">Richter LLC</span>
+        </div>
+        <nav className="space-x-6">
+          <Link to="/" className="text-gray-700 hover:text-blue-600">
+            Home
+          </Link>
+          <Link to="/projects" className="text-gray-700 hover:text-blue-600">
+            Projects
+          </Link>
+          <Link to="/contact" className="text-gray-700 hover:text-blue-600">
+            Contact
+          </Link>
+        </nav>
+      </div>
+    </header>
   );
 };
 
