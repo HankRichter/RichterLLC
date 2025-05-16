@@ -22,6 +22,7 @@
     "babel-loader": "^9.1.2",
     "css-loader": "^6.8.1",
     "firebase": "^11.7.1",
+    "framer-motion": "^12.11.0",
     "postcss": "^8.4.31",
     "postcss-loader": "^7.3.3",
     "react": "^18.2.0",
