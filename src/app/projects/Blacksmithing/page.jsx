@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const blacksmithingImages = [
   "Blacksmithing 1.png",
@@ -51,10 +52,12 @@ const Projects = () => {
             key={fileName}
             className="mb-6 break-inside-avoid rounded-2xl overflow-hidden border-2 border-gray-200 shadow-md bg-white"
           >
-            <img
+            <Image
               src={buildImagePath(fileName)}
               alt={`Blacksmithing project ${index + 1}`}
-              loading="lazy"
+              width={0}
+              height={0}
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               className="w-full h-auto object-contain"
             />
           </div>
