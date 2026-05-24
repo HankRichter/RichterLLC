@@ -123,6 +123,22 @@ const Projects = () => {
       ? buildImagePath(activeProject.name, activeImageName)
       : "";
 
+  const prevImagePath =
+    activeProject && activeImages.length > 1
+      ? buildImagePath(
+          activeProject.name,
+          activeImages[(visibleIndex - 1 + activeImages.length) % activeImages.length]
+        )
+      : null;
+
+  const nextImagePath =
+    activeProject && activeImages.length > 1
+      ? buildImagePath(
+          activeProject.name,
+          activeImages[(visibleIndex + 1) % activeImages.length]
+        )
+      : null;
+
   const openProjectModal = (projectId) => {
     setSelectedProject(projectId);
   };
@@ -247,6 +263,19 @@ const Projects = () => {
                   </button>
                 );
               })}
+            </div>
+
+            <div aria-hidden="true" className="sr-only">
+              {prevImagePath && (
+                <div className="relative w-px h-px">
+                  <Image src={prevImagePath} alt="" fill sizes="90vw" priority />
+                </div>
+              )}
+              {nextImagePath && (
+                <div className="relative w-px h-px">
+                  <Image src={nextImagePath} alt="" fill sizes="90vw" priority />
+                </div>
+              )}
             </div>
           </div>
         </div>
