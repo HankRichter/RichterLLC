@@ -21,7 +21,7 @@ export default function Navbar() {
             className="text-xl font-bold text-gray-900 hover:text-blue-600 transition"
             onClick={() => setIsOpen(false)}
           >
-            Richter LLC
+            Richter's LLC
           </Link>
 
           <button

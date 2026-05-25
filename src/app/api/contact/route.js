@@ -1,3 +1,4 @@
+import { log } from "node:console";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -21,6 +22,9 @@ export async function POST(request) {
       subject: `New inquiry from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
     });
+
+    console.log(Response.json({ success: true }));
+    
 
     return Response.json({ success: true });
   } catch (error) {

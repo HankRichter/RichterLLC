@@ -3,7 +3,7 @@ import Footer from "./components/Footer/page";
 import "./globals.css";
 
 export const metadata = {
-  title: "Richter LLC",
+  title: "Richter's LLC",
 };
 
 export default function RootLayout({ children }) {
