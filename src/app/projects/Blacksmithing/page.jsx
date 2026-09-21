@@ -44,13 +44,13 @@ const Projects = () => {
 
   return (
     <div className="container mx-auto px-4 py-10">
-      <h1 className="text-4xl font-bold text-center mb-10">Blacksmithing</h1>
+      <h1 className="text-4xl font-bold text-center mb-10 text-white">Blacksmithing</h1>
 
       <div className="columns-1 sm:columns-2 lg:columns-3 gap-6">
         {randomizedImages.map((fileName, index) => (
           <div
             key={fileName}
-            className="mb-6 break-inside-avoid rounded-2xl overflow-hidden border-2 border-gray-200 shadow-md bg-white"
+            className="mb-6 break-inside-avoid rounded-2xl overflow-hidden border border-white/10 shadow-lg shadow-black/30 bg-white/5"
           >
             <Image
               src={buildImagePath(fileName)}

@@ -149,7 +149,7 @@ const Projects = () => {
 
   return (
     <div className="container mx-auto px-4 py-10">
-      <h1 className="text-4xl font-bold text-center mb-10">Our Projects</h1>
+      <h1 className="text-4xl font-bold text-center mb-10 text-white">Our Projects</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {carProjects.map((project) => {
@@ -163,7 +163,7 @@ const Projects = () => {
               key={project.id}
               type="button"
               onClick={() => openProjectModal(project.id)}
-              className="text-left cursor-pointer border-2 rounded-2xl overflow-hidden shadow-lg transition-all duration-200 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-2xl hover:border-blue-500 bg-white"
+              className="text-left cursor-pointer border border-white/10 rounded-2xl overflow-hidden shadow-lg shadow-black/30 transition-all duration-200 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-2xl hover:border-primary bg-white/5"
             >
               <div className="relative w-full h-52 sm:h-56">
                 <Image
@@ -174,7 +174,7 @@ const Projects = () => {
                   className="object-cover"
                 />
               </div>
-              <div className="text-center font-semibold text-lg py-3 px-2">
+              <div className="text-center font-semibold text-lg py-3 px-2 text-white">
                 {project.name}
               </div>
             </button>
@@ -188,24 +188,24 @@ const Projects = () => {
           onClick={closeProjectModal}
         >
           <div
-            className="bg-white rounded-2xl max-w-6xl w-full max-h-[90vh] overflow-y-auto p-4 sm:p-6"
+            className="bg-neutral border border-white/10 rounded-2xl max-w-6xl w-full max-h-[90vh] overflow-y-auto p-4 sm:p-6"
             onClick={(event) => event.stopPropagation()}
           >
             <div className="flex items-center justify-between mb-4">
-              <h2 className="text-2xl sm:text-3xl font-bold">{activeProject.name}</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-white">{activeProject.name}</h2>
               <button
                 type="button"
                 onClick={closeProjectModal}
-                className="rounded-md px-3 py-1.5 bg-gray-900 text-white hover:bg-gray-700 transition"
+                className="rounded-md px-3 py-1.5 bg-primary text-white hover:bg-primary-dark transition"
               >
                 <span className="hidden sm:inline">Close</span>
                 <span className="sm:hidden text-lg leading-none">&times;</span>
               </button>
             </div>
 
-            <p className="text-gray-700 mb-5">{activeProject.description}</p>
+            <p className="text-white/70 mb-5">{activeProject.description}</p>
 
-            <div className="relative w-full h-72 sm:h-[28rem] bg-gray-100 rounded-xl mb-4 overflow-hidden group">
+            <div className="relative w-full h-72 sm:h-[28rem] bg-white/5 rounded-xl mb-4 overflow-hidden group">
               {activeImagePath ? (
                 <Image
                   src={activeImagePath}
@@ -248,7 +248,7 @@ const Projects = () => {
                     type="button"
                     onClick={() => goTo(index)}
                     className={`rounded-lg overflow-hidden border-2 transition ${
-                      isActive ? "border-blue-600" : "border-transparent hover:border-blue-300"
+                      isActive ? "border-primary" : "border-transparent hover:border-primary/50"
                     }`}
                   >
                     <div className="relative w-full h-16 sm:h-20">

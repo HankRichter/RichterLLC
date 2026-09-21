@@ -59,23 +59,23 @@ const Contact = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <h2 className="text-3xl font-bold mb-6 text-center">Contact Me</h2>
+      <h2 className="text-3xl font-bold mb-6 text-center text-white">Contact Me</h2>
       {success && (
-        <p className="text-green-600 text-center mb-4">
+        <p className="text-green-400 text-center mb-4">
           Your message has been sent!
         </p>
       )}
       {error && (
-        <p className="text-red-600 text-center mb-4">{error}</p>
+        <p className="text-red-400 text-center mb-4">{error}</p>
       )}
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-4 rounded-2xl border border-white/10 bg-white/5 p-6">
         <input
           type="text"
           name="name"
           value={formData.name}
           onChange={handleChange}
           placeholder="Your Name"
-          className="w-full border rounded p-3"
+          className="w-full rounded border border-white/10 bg-white/5 p-3 text-white placeholder-white/40 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
           required
         />
         <input
@@ -84,7 +84,7 @@ const Contact = () => {
           value={formData.email}
           onChange={handleChange}
           placeholder="Your Email"
-          className="w-full border rounded p-3"
+          className="w-full rounded border border-white/10 bg-white/5 p-3 text-white placeholder-white/40 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
           required
         />
         <textarea
@@ -93,13 +93,13 @@ const Contact = () => {
           onChange={handleChange}
           placeholder="Your Message"
           rows="5"
-          className="w-full border rounded p-3"
+          className="w-full rounded border border-white/10 bg-white/5 p-3 text-white placeholder-white/40 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
           required
         />
         <button
           type="submit"
           disabled={loading}
-          className="w-full bg-blue-900 text-white py-3 rounded hover:bg-blue-500 transition disabled:opacity-50"
+          className="w-full rounded bg-primary py-3 font-semibold text-white hover:bg-primary-dark transition disabled:opacity-50"
         >
           {loading ? "Sending..." : "Send Inquiry"}
         </button>
