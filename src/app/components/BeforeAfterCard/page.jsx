@@ -130,8 +130,6 @@ export function BeforeAfterCard({ car, viewBasePath }) {
       <BeforeAfterSlider
         beforeImage={beforeImage}
         afterImage={afterImage}
-        // beforeLabel={beforeLabel}
-        // afterLabel={afterLabel}
         alt={name}
       />
 
@@ -142,7 +140,6 @@ export function BeforeAfterCard({ car, viewBasePath }) {
   );
 }
 
-// Renders one BeforeAfterCard per entry in `cars`.
 export default function BeforeAfterCards({ cars = [], viewBasePath }) {
   if (!cars.length) return null;
 

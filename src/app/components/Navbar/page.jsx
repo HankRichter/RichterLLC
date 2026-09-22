@@ -35,7 +35,7 @@ export default function Navbar() {
           </button>
 
           <nav className="hidden md:flex items-center gap-6 font-mono text-sm uppercase tracking-wide">
-            <Link href="/projects/CarProjects/test" className="text-white/70 hover:text-primary transition">Car Restoration</Link>
+            <Link href="/projects/CarProjects" className="text-white/70 hover:text-primary transition">Car Restoration</Link>
             <Link href="/projects/Blacksmithing" className="text-white/70 hover:text-primary transition">Blacksmithing</Link>
             <Link href="/components/Contact" className="text-white/70 hover:text-primary transition">Contact</Link>
           </nav>
@@ -44,7 +44,7 @@ export default function Navbar() {
         {isOpen && (
           <nav className="absolute left-4 right-4 top-full mt-2 flex flex-col gap-3 rounded-2xl border border-white/10 bg-neutral p-4 shadow-lg shadow-black/40 md:hidden font-mono text-sm uppercase tracking-wide">
             <Link
-              href="/projects/CarProjects/test"
+              href="/projects/CarProjects"
               className="rounded-lg px-3 py-2 text-white/70 hover:bg-white/10 hover:text-primary transition"
               onClick={() => setIsOpen(false)}
             >

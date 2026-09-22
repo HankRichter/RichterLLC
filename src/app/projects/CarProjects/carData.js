@@ -30,7 +30,7 @@ export const carProjects = [
     id: "1963-catalina",
     name: "1963 Catalina",
     beforeImage: buildImagePath("1963 Catalina", "63Catalina 1.jpg"),
-    afterImage: buildImagePath("1963 Catalina", "63Catalina 12.JPG"),
+    afterImage: buildImagePath("1963 Catalina", "63Catalina 13.JPG"),
     description:
       "This car came to the shop having had an older restoration. The paint was in poor condition and there were some rust issues. The old paint was stripped, rusty areas were cut out and replaced with custom patch panels. (Replacement body panels were not available for this car). The trunk floor was replaced. The car was then primed, blocked, and painted in a single stage urethane.",
     photos: buildPhotos("1963 Catalina", [
@@ -54,6 +54,8 @@ export const carProjects = [
     name: "1967 Camaro",
     beforeImage: buildImagePath("1967 Camaro", "67Camaro 5.jpg"),
     afterImage: buildImagePath("1967 Camaro", "67Camaro 2.JPEG"),
+    description:
+      "This car came to the hop after the owner had done most of the body work himself. He had been having trouble finding a shop that would even take the project on. The shop that did give him a price was much more expensive, had a longer delivery time, and wouldn’t get back to him on when they could start. The car was delivered on time and at the cost quoted.",
     photos: buildPhotos("1967 Camaro", [
       "67Camaro 1.jpg",
       "67Camaro 2.JPEG",
@@ -66,7 +68,7 @@ export const carProjects = [
   {
     id: "1964-electra-225",
     name: "1964 Electra 225",
-    beforeImage: buildImagePath("1964 Electra 225", "1964 Electra B2.jpg"),
+    beforeImage: buildImagePath("1964 Electra 225", "1964 Electra B4.jpg"),
     afterImage: buildImagePath("1964 Electra 225", "1964 Electra A5.jpg"),
     photos: buildPhotos("1964 Electra 225", [
       "1964 Electra B1.jpg",

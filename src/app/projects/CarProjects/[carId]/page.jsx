@@ -3,8 +3,8 @@
 import { useMemo } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Image from "next/image";
-import useCarousel from "../../../../hooks/useCarousel";
-import { carProjects } from "../../carData";
+import useCarousel from "../../../hooks/useCarousel";
+import { carProjects } from "../carData";
 
 export default function CarPhotosPage() {
   const params = useParams();
@@ -82,6 +82,10 @@ export default function CarPhotosPage() {
           {visibleIndex + 1} / {photos.length}
         </span>
       </div>
+
+      {car.description && (
+        <p className="mb-5 text-white/70">{car.description}</p>
+      )}
 
       <div className="grid grid-cols-3 gap-3 sm:grid-cols-4 lg:grid-cols-6">
         {photos.map((photoSrc, index) => {
