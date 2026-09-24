@@ -11,7 +11,7 @@ export const carProjects = [
     id: "1946-mg",
     name: "1946 MG",
     beforeImage: buildImagePath("1946 MG", "MG1.jpg"),
-    afterImage: buildImagePath("1946 MG", "MG9.jpg"),
+    afterImage: buildImagePath("1946 MG", "MG11.jpeg"),
     description:
       "This MG came to the shop totally disassembled in July of 2021. The owner had taken it apart as a retirement project and realized he was over his head. Another shop started the work and also got overwhelmed with the wooden structure. The rest of the wood was assembled to factory specifications, steel body panels all custom fit to that structure (just like they did in England in 1946). All of the shiny bits were repaired and re-chromed. The chassis was gone through and every component was repaired, restored, or replaced. A brand new interior was installed as well as the roof and entire wiring harness. It was returned to it's owner in New Jersey in July of 2023. He was over the moon and said 'WOW! I can't believe it. I had all but given up on this car and was about to start selling it's parts on E-bay.'",
     photos: buildPhotos("1946 MG", [
@@ -24,6 +24,9 @@ export const carProjects = [
       "MG7.jpg",
       "MG8.jpg",
       "MG9.jpg",
+      "MG10.jpeg",
+      "MG11.jpeg",
+      "MG12.jpeg"      
     ]),
   },
   {
