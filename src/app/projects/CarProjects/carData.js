@@ -58,7 +58,7 @@ export const carProjects = [
     beforeImage: buildImagePath("1967 Camaro", "67Camaro 5.jpg"),
     afterImage: buildImagePath("1967 Camaro", "67Camaro 2.JPEG"),
     description:
-      "This car came to the hop after the owner had done most of the body work himself. He had been having trouble finding a shop that would even take the project on. The shop that did give him a price was much more expensive, had a longer delivery time, and wouldn’t get back to him on when they could start. The car was delivered on time and at the cost quoted.",
+      "This car came to the shop after the owner had done most of the body work himself. He had been having trouble finding a shop that would even take the project on. The shop that did give him a price was much more expensive, had a longer delivery time, and wouldn’t get back to him on when they could start. The car was delivered on time and at the cost quoted.",
     photos: buildPhotos("1967 Camaro", [
       "67Camaro 1.jpg",
       "67Camaro 2.JPEG",
